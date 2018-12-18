@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">  <!-- alapértelmezet html5-ben nem kell megadni -->
+	<title>Page Title</title>
+    <link rel=stylesheet" href="forma.css"> <!--metadatok sorrendje kötött-->
+    <style>
+    /*formázás*/
+    </style >
+</head>
+<body>
+
+    Hello Word! <!--síma szöveg -->
+    <!-- szöveges tartalom szerkesztése alapvetően öt tag -->
+    <!--címsor  h1- h6 -->
+    <h1>Cím1</h1>
+    <h2>Cím2</h2>
+    <h3>Cím3</h3>
+    <h4>Cím4</h4>
+    <h5>Cím5</h5>
+    <h6>Cím6</h6>
+    <!-- bekezdés p -->
+     <p>Hello Világ!!!<br> itt vagyok!</p>
+    <!-- <br> sortörés
+           <hr/> elválasztó vízszintes vonal 
+           + megjegyzés -->
+    <hr/>
+    <!--Listák 
+            három fajta:     - számozott vagy rendezett lista <ol> kezdőérték és csökkenő sor beállítható
+                                       - számozatlan <ul> felsorolás pld. GYIK
+                                        <li> listaelemet definiál <ol> vagy <ul>
+                                       - meghatarázási , vagy másképpen definíciós lista  
+                                                      <dl> meghatározási lista 
+                                                      <dt> meghatározandó fogalom
+                                                      <dd> társítás
+             használható külön-külön vagy egymásbs ágyazva is 
+             Minden listaelem új sorban kezdődik 
+    -->
+    <ol>
+            <li> Európa
+                    <ol>
+                             <li> Magyarország </li>
+                             <li> Franciaország </li>
+                    </ol>
+            </li>
+            <li>Amerika
+                    <ol>
+                             <li>Coloroda</li>
+                             <li>Ohio</li>
+                    </ol>
+                             <p>Számos országba kell még elutznunk.</p>
+                     <ol start="4">
+                           <li>Új-Mexico</li>
+                     </ol>
+             </li>
+    </ol>
+    <ol>
+            <li value="2">Budapest</li>
+            <li value="4">Tokio</li>
+            <li value="6">Denver</li>
+    </ol>
+    <ul>
+             <li> Új-Mexico
+                    <ul>
+                              <li>Santa Fe</li>
+                              <li>Albuqurque</li>
+                    </ul>
+             </li>
+            <li>California
+                    <ol>
+                             <li>San Diego</li>
+                             <li>Los Angeles</li> 
+                    </ol>
+            </li>
+    </ul>
+    <ol reversed start ="5">
+           <li>San Diego</li>
+           <li>New York</li>
+          Denver <!---ha nem adom meg a lista elemet <li></li>,  akkor az elemeket egy sorba helyezi  menu -->
+          Budapest
+    </ol>
+    <dl> <!-- számok és egyéb jelek nélküli lista -->
+            <dt>San Diego</dt>
+                <dd>A világ egyik csodája</dd> <!--allista-->
+                <dd>Amerikában</dd>
+            <dt>Los Angeles</dt>
+                <dd>Angyalok városa</dd>
+     </dl>
+     
+     <!-- Táblázatok
+              - minden oszlopban ugyanannyi cellának kell lenni
+              - minden cella ugyanolyan széles 
+              - a cellák eggyesíthetők 
+              - A tagek:
+                    - <table></table> táblázat nyitó-záró
+                    - <tr></tr> vízszintes sor
+                    - <td></td>adat tag
+                    - <th></th> sor és oszlop  fejlécek 
+                    - <caption></caption> táblázat cím
+                    - táblázat elemeinek csoprtosítása 
+                             - áttekinthetőség (fej és lábléc nagyobb táblázat esetén minden oldal eljén és végén megjelenik) 
+                                    - <thead> </thead> fejléc
+                                    - <tbody> </tbody> törzs
+                                    - <tfoot></tfoot> lábléc
+                         - cellák egyeítése
+                                     - <col>
+                                     -<colgroup>
+                                     -<colspan>
+     -->
+     <table border="1" align="center" cellpadding="2" cellspacing="0">
+     
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--- Magyarázat helye web: https://htmlsegitseg.wordpress.com/html-tablazatok/-->
+<html>
+<head>
+	<title>Táblázat minta </title>
+</head>
+<body>
+<table width="50%" border="5" cellpadding="5" cellspacing="4"> 
+<caption align="bottom"> Táblázat elnevezése </caption>
+    <tr align="center">
+            <th id="elso oszlop"> Táblázat első oszlopának fejléce<br>, azaz <br> elnevezése. </th>
+            <th colspan="2"> Táblázat második oszlopának fejléce, azaz elnevezése. </th>
+            <th> Táblázat harmadik oszlopának fejléce, azaz elnevezése. </th>
+    </tr>
+
+    <tr align="right">
+            <td width="50%"> Adatok </td> <!-- cella szélesség aránya az egészhez -->
+            <td rowspan="2"> Adatok </td> <!-- rowspan hánysort foglal el az adat , szét zúzta a táblát erre figyelni  -->
+            <td> Adatok </td>
+            <td> &nbsp </td> <!--üres cella , ha üresen hagyom szerintem úgy is jó-->
+    </tr>
+
+    <tr>
+            <td headers="elso oszlop"> Adatok </td> <!-- a cella az elsőoszlopfejlécéhez tartozik -->
+            <td> Adatok </td>
+            <td> Adatok </td>
+            <td> Adatok </td>
+    </tr>
+</table>
+<table width="50%" border="5" cellpadding="5" cellspacing="4"> 
+      
+       -<tr>
+            <th > Ételek </th>  <!---a soroknak is lehet fejléce -->
+            <td> Adatok </td>
+            <td> Adatok </td>
+            <td> Adatok </td>
+            <td> Adatok </td>
+       </tr>
+       <tr>
+            <th scope="row"> Ízesítők </th>  <!---a scope megmondja hogy a fejléc sorhoz vagy oszlophoz tartozik -->
+            <td> Adatok </td>
+            <td> Adatok </td>
+            <td> Adatok </td>
+            <td> Adatok </td>
+       </tr>
+      <tr>
+             <th scope="row"> Adalékok </th> 
+            <td> Adatok </td>
+            <td> Adatok </td>
+            <td> Adatok </td>
+            <td> Adatok </td>
+       </tr>
+</table>
+
+
+</body>
+</html>
